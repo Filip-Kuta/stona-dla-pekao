@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt</title>
+    <link rel="stylesheet" href="./utils/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Josefin+Sans&family=Oswald:wght@200..700&family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            
+           
+            <div class="header__user" >
+                <svg href="./profil.html" class="header__user--svg" >
+                    <use href="./images/svg/icons.svg#user"></use>
+                </svg>
+                <p>Mój profil</p>
+            </div>
+            <div class="alert-button">
+                <button  class="alert-button__trigger" onclick="alert('Przycisk został kliknięty!')">
+                    <svg class="alert-button__svg">
+                        <use href="./images/svg/icons.svg#bell"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Szukaj..." class="search-input">
+                <button type="submit" class="search-button">
+                    <svg class="magnifier">
+                        <use href="./images/svg/icons.svg#magnifier"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="logo">
+                <img src="./images/logo/PZU_logo.png" alt="logo PZU " class="logo__size">
+            </div>
+        
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p class="boxtitle">Aktualności</p>
+            <div class="box_container">
+            <div class="news-box">
+                <h2>Tytuł aktualności</h2>
+                <p>Treść aktualności lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="news-box">
+                <h2>Tytuł aktualności</h2>
+                <p>Treść aktualności lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="news-box">
+                <h2>Tytuł aktualności</h2>
+                <p>Treść aktualności lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="news-box">
+                <h2>Tytuł aktualności</h2>
+                <p>Treść aktualności lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="knowledge-base">
+            <h3>Baza wiedzy</h3>
+            <ul>
+                <li><a href="#">Temat 1</a>
+                    <ul>
+                        <li><a href="#">Podtemat 1.1</a></li>
+                        <li><a href="#">Podtemat 1.2</a></li>
+                        <!-- Dodaj więcej podpunktów -->
+                    </ul>
+                </li>
+                <li><a href="#">Temat 2</a>
+                    <ul>
+                        <li><a href="#">Podtemat 2.1</a></li>
+                        <li><a href="#">Podtemat 2.2</a></li>
+                        <!-- Dodaj więcej podpunktów -->
+                    </ul>
+                </li>
+                <!-- Dodaj więcej tematów -->
+            </ul>
+        </div>
+        </div>
+    </main>
+    <footer class="container_footer">
+        <div class="client-list container">
+            <h2 class="client-list__heading">Nasi klienci</h2>
+            <ul class="client-list__item">
+              <li class="client-list__color">
+                <svg class="client-list__svg">
+                  <use xlink:href="./images/icons.svg#icon-Logo"></use>
+                </svg>
+              </li>
+              <li class="client-list__color">
+                <svg class="client-list__svg">
+                  <use xlink:href="./images/icons.svg#icon-Logo-1"></use>
+                </svg>
+              </li>
+              <li class="client-list__color">
+                <svg class="client-list__svg">
+                  <use xlink:href="./images/icons.svg#icon-Logo-2"></use>
+                </svg>
+              </li>
+              <li class="client-list__color">
+                <svg class="client-list__svg">
+                  <use xlink:href="./images/icons.svg#icon-Logo-3"></use>
+                </svg>
+              </li>
+              <li class="client-list__color">
+                <svg class="client-list__svg">
+                  <use xlink:href="./images/icons.svg#icon-Logo-4"></use>
+                </svg>
+              </li>
+              <li class="client-list__color">
+                <svg class="client-list__svg">
+                  <use xlink:href="./images/icons.svg#icon-Logo-5"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+    </footer>
+</body>
+</html>

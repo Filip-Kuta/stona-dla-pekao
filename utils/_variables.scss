@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  color: var(--secondary-color);
+  border: none;
+  margin: 0;
+  overflow-x:hidden;
+  background: #0575E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+html, body {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+textarea {
+  resize: none;
+}
+
+.d-none {
+  display: none;
+}
+
+
+:root {
+  --praimary-color: rgb(243,146,0);
+  --secondary-color: #000000;
+  --tertiary-color: #ffffff;
+  --fourthary-color: #f5f4fa;
+  --fifthary-color: #757575;
+  --sixthary-color: #212121;
+  --seventhary-color: #afb1b8;
+  --eighthary-color: #2f303a;
+  --work-section-bacground: rgba(47, 48, 58, 0.8);
+  --transition-duration: 250ms;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1200px;
+

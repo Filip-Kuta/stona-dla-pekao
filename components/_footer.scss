@@ -1,0 +1,56 @@
+.container_footer{
+    
+    background-color: #234678;
+}
+.client-list {
+    margin-block: 60px;
+    @media screen and (min-width: $laptop) {
+      padding: 0;
+      margin-block: 94px;
+    }
+  
+    &__heading {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.16;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      gap: 30px;
+  
+      @media screen and (min-width: $laptop) {
+        flex-direction: row;
+        padding-top: 50px;
+      }
+    }
+    &__color {
+      fill: rgba(175, 177, 184, 1);
+      &:hover svg {
+        fill: var(--praimary-color);
+        border-color: var(--praimary-color);
+      }
+      @media screen and (min-width: $laptop) {
+        margin-top: 0;
+      }
+    }
+    &__svg {
+      width: 210px;
+      height: 92px;
+      padding: 1px;
+      border: solid 1px rgba(175, 177, 184, 1);
+      border-radius: 4px 4px 4px 4px;
+      cursor: pointer;
+      transition: var(--transition-duration) var(--cubic-bezier);
+      @media screen and (min-width: $laptop) {
+        width: 170px;
+        height: 92px;
+      }
+    }
+  }

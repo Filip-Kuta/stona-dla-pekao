@@ -1,0 +1,105 @@
+.header{
+  position: relative;
+  display: flex;
+  justify-items: center;
+  background-color: white;
+  
+
+&__user{
+    margin: 20px;
+    margin-right: 15%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: medium;
+    font-size: 19px;
+    
+    
+}
+    &__user--svg{
+        height: 80px;
+        width: 80px;
+        background-color: gray;
+        padding: 8px;
+        border-radius: 100%;
+        &:hover{
+            background-color: rgb(221, 214, 214);
+            transition: fill 0.3s ease;
+            cursor: pointer;
+        }
+    }
+
+.alert-button{
+  margin: 40px 10px 0 0px;
+
+  
+    
+  &__trigger{
+    background-color: transparent;
+    border: none;
+  }
+  &__svg{
+    width: 40px;
+    height: 40px;
+    &:hover{
+      cursor: pointer;
+      fill: #0b7dda;
+      transform: scale(1.1);
+    }
+  }
+}
+
+    /* Kontener dla pola wyszukiwania */
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+  }
+  
+  /* Pole wyszukiwania */
+  .search-input {
+    padding: 12px 400px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Przycisk wyszukiwania */
+  .search-button {
+    position: absolute;
+    right: 0;
+    padding: 1px 23px;
+    border: none;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Ikona wewnątrz przycisku wyszukiwania */
+  .search-button i {
+    font-size: 18px;
+   
+  }
+  
+  /* Stylowanie przycisku podczas najechania */
+  .search-button:hover {
+    background-color: #0b7dda;
+    
+  }
+ .magnifier{
+  width: 22px;
+    height: 39px 
+ }
+  
+
+  .logo{
+    margin-left: 15%;
+    &__size{
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
