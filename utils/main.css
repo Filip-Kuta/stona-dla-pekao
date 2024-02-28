@@ -19,8 +19,8 @@ body {
 }
 
 .ESA {
-  background: #ad5389; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #4b6cb7; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 html, body {
@@ -39,6 +39,10 @@ textarea {
 
 .d-none {
   display: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 :root {
@@ -85,6 +89,10 @@ textarea {
   background-color: rgb(221, 214, 214);
   transition: fill 0.3s ease;
   cursor: pointer;
+}
+.header .profil {
+  font-size: 20px;
+  color: black;
 }
 .header .alert-button {
   margin: 40px 10px 0 0px;
@@ -237,7 +245,6 @@ textarea {
 
 .container_footer {
   height: 230px;
-  background-color: #234678;
   padding-top: 50px;
 }
 
