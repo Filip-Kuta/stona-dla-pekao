@@ -11,6 +11,7 @@ body {
   border: none;
   margin: 0;
   overflow-x: hidden;
+  border-radius: 1px;
 }
 
 .PZU {
@@ -21,6 +22,11 @@ body {
 .ESA {
   background: #4b6cb7; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.PEK {
+  background: #ED213A; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 html, body {
@@ -106,9 +112,10 @@ a {
   height: 40px;
 }
 .header .alert-button__svg:hover {
+  transition: fill 0.3s ease;
   cursor: pointer;
-  fill: #0b7dda;
-  transform: scale(1.1);
+  fill: #f00f40;
+  transform: scale(1.5);
 }
 .header .search-container {
   position: relative;
@@ -128,7 +135,7 @@ a {
   right: 0;
   padding: 1px 23px;
   border: none;
-  background-color: #2196f3;
+  background-color: #7a7c7e;
   color: white;
   border-radius: 0 20px 20px 0;
   cursor: pointer;
@@ -138,7 +145,7 @@ a {
   font-size: 18px;
 }
 .header .search-button:hover {
-  background-color: #0b7dda;
+  background-color: #c4c4c4;
 }
 .header .magnifier {
   width: 22px;
@@ -152,6 +159,10 @@ a {
   height: 120px;
 }
 .header .logo__sizeESA {
+  width: 200px;
+  height: 120px;
+}
+.header .logo__PEK {
   width: 200px;
   height: 120px;
 }

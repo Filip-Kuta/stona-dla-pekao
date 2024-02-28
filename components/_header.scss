@@ -46,9 +46,10 @@
     width: 40px;
     height: 40px;
     &:hover{
+      transition: fill 0.3s ease;
       cursor: pointer;
-      fill: #0b7dda;
-      transform: scale(1.1);
+      fill: #f00f40;
+      transform: scale(1.5);
     }
   }
 }
@@ -76,7 +77,7 @@
     right: 0;
     padding: 1px 23px;
     border: none;
-    background-color: #2196f3;
+    background-color: #7a7c7e;
     color: white;
     border-radius: 0 20px 20px 0;
     cursor: pointer;
@@ -91,7 +92,7 @@
   
   /* Stylowanie przycisku podczas najechania */
   .search-button:hover {
-    background-color: #0b7dda;
+    background-color: #c4c4c4;
     
   }
  .magnifier{
@@ -107,6 +108,10 @@
       height: 120px;
     }
     &__sizeESA{
+      width: 200px;
+      height: 120px;
+    }
+    &__PEK{
       width: 200px;
       height: 120px;
     }
