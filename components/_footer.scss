@@ -1,13 +1,11 @@
 .container_footer{
-    
+    height: 230px;
     background-color: #234678;
+    padding-top: 50px;
 }
 .client-list {
-    margin-block: 60px;
-    @media screen and (min-width: $laptop) {
-      padding: 0;
-      margin-block: 94px;
-    }
+    
+    
   
     &__heading {
       font-family: "Roboto";
@@ -23,12 +21,10 @@
       flex-wrap: wrap;
       justify-content: center;
       padding: 0;
-      gap: 30px;
-  
-      @media screen and (min-width: $laptop) {
-        flex-direction: row;
-        padding-top: 50px;
-      }
+      gap: 60px;
+      margin-bottom: 40px; 
+      
+      
     }
     &__color {
       fill: rgba(175, 177, 184, 1);
@@ -36,21 +32,36 @@
         fill: var(--praimary-color);
         border-color: var(--praimary-color);
       }
-      @media screen and (min-width: $laptop) {
-        margin-top: 0;
-      }
+      
     }
     &__svg {
-      width: 210px;
-      height: 92px;
+      width: 300px;
+      height: 120px;
+      background-color: white;
       padding: 1px;
       border: solid 1px rgba(175, 177, 184, 1);
       border-radius: 4px 4px 4px 4px;
       cursor: pointer;
       transition: var(--transition-duration) var(--cubic-bezier);
-      @media screen and (min-width: $laptop) {
-        width: 170px;
-        height: 92px;
-      }
+      
+    }
+    &__imgPZU{
+      width: 120px;
+    height: 115px;
+    display: flex;
+    margin: auto;
+      
+    }
+    &__imgESA{
+      width: 222px;
+    display: flex;
+    margin: auto;
+      
+    }
+    &__imgPEK{
+      width: 222px;
+    display: flex;
+    margin: auto;
+      
     }
   }
