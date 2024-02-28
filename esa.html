@@ -24,11 +24,19 @@
                   </a>
             </div>
             <div class="alert-button">
-                <button  class="alert-button__trigger" onclick="alert('Przycisk został kliknięty!')">
+                <button class="alert-button__trigger">
                     <svg class="alert-button__svg">
                         <use href="./images/svg/icons.svg#bell"></use>
                     </svg>
                 </button>
+            </div>
+            
+            <div id="overlay" class="overlay hidden">
+                <div class="overlay-content">
+                    <span class="close" onclick="closeOverlay()">&times;</span>
+                    <h2>Nowa informacja</h2>
+                    <p>To jest nowa informacja, która pojawia się w nakładce.</p>
+                </div>
             </div>
             <div class="search-container">
                 <input type="text" placeholder="Szukaj..." class="search-input">
@@ -114,5 +122,6 @@
             </ul>
           </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
