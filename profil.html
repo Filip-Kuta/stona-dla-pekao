@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Control Panel</title>
+  <link rel="stylesheet" href="./utils/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Josefin+Sans&family=Oswald:wght@200..700&family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <div class="header">
+            <div class="header__user" >
+                <a href="profil.html">
+                    <svg  class="header__user--svg" >
+                        <use href="./images/svg/icons.svg#user"></use>
+                    </svg>
+                    <p class="profil">Mój profil</p>
+                  </a>
+            </div>
+            <div class="alert-button">
+                <button class="alert-button__trigger">
+                    <svg class="alert-button__svg">
+                        <use href="./images/svg/icons.svg#bell"></use>
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="overlay" class="overlay hidden">
+                <div class="overlay-content">
+                    <span class="close" onclick="closeOverlay()">&times;</span>
+                    <h2>Nowa informacja</h2>
+                    <p>To jest nowa informacja, która pojawia się w nakładce.</p>
+                </div>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Szukaj..." class="search-input">
+                <button type="submit" class="search-button">
+                    <svg class="magnifier">
+                        <use href="./images/svg/icons.svg#magnifier"></use>
+                    </svg>
+                </button>
+            </div>
+    </header>
+    <main>
+    <div class="container_favorites">
+        <h1>Personal Control Panel</h1>
+        <div id="favorites">
+          <h2>All Favorites :</h2>
+          <div id="favorites-container" class="favorites_box">
+            <!-- All favorite items will be dynamically added here -->
+          </div>
+          
+        </div>
+      </div>
+    </main>
+  <footer class="container_footer">
+    <div class="client-list container">
+        
+        <ul class="client-list__item">
+            <li class="client-list__color">
+                <a href="pek.html">
+                <div class="client-list__svg">
+                  <img src="./images/logo/PEK_logo.png" alt="logo PEKAO TFI" class="client-list__imgPEK"/>
+                </div>
+            </a>
+              </li>
+          <li class="client-list__color">
+            <a href="esa.html">
+            <div class="client-list__svg" >
+              <img src="./images/logo/ESA_logo.png" alt="logo ESALIANS" class="client-list__imgESA" />
+            </div>
+          </a>
+          </li>
+          <li class="client-list__color">
+            <a href="index.html">
+            <div class="client-list__svg">
+              <img src="./images/logo/PZU_logo.png" alt="logo PZU" class="client-list__imgPZU"/>
+            </div>
+        </a>
+          </li>
+          
+        </ul>
+      </div>
+</footer>
+  <script src="script.js"></script>
 </body>
 </html>
